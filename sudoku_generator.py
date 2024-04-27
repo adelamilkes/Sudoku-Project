@@ -6,6 +6,7 @@ class SudokuGenerator:
         self.removed_cells = removed_cells
         self.board = [[0 for _ in range(row_length)] for _ in range(row_length)]
         self.original_board = [row[:] for row in self.board]
+        self.box_length = row_length
 
     def get_board(self):
         return self.board
